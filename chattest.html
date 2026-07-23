@@ -155,7 +155,7 @@
 	}
 </style>
  
-<!-- MathJax để hiển thị công thức toán học -->
+
 <script>
 	window.MathJax = {
     	tex: {
@@ -169,6 +169,10 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 </head>
 <body>
+    <div class="main-container">
+        <a href="intest.html" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> Quay lại Tổng quan
+        </a>
  
 <div class="chat-container">
 	<div class="error-message" id="error-message">Lỗi: Không thể kết nối đến Gemini API. Vui lòng kiểm tra API key.</div>
@@ -185,11 +189,11 @@
 </div>
  
 <script>
-    // Cấu hình Gemini API
+    
     const GEMINI_API_KEY = 'AQ.Ab8RN6J5cit0rktzTaFjMJnUBimCbWqYsg6t8Re8mJNk23sSjA'; // Thay bằng Gemini API key thực tế
     const MODEL_NAME = 'gemini-3-flash-preview';
  
-    //Đoạn dưới này là những câu hỏi và trả lời mẫu để chatbot trả lời nhanh hơn mà không cần gọi API
+   
     const localData = [
         { "prompt": "tiết kiệm để làm gì", "completion": "để cho những mục đích tương lai" },
         { "prompt": "học lớp nào", "completion": "DH25CS03." },
